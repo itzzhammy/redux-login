@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(236, 236, 236);
+}
+
+.logout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    /* font-family: "Inter"; */
+}
+
+.logout_button {
+    min-width: 100px;
+    padding: 6px 2px;
+    margin-top: 6px;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 10px;
+    /* font-family: "Inter"; */
+    border-radius: 3px;
+    margin-left: 155px;
+}
+
+.user_email {
+    color: blue;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* font-family: "Inter"; */
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form>h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.login_form>input {
+    min-width: 380px;
+    padding: 20px 0;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    /* font-family: "Inter"; */
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.submit_btn {
+    padding: 17px 30px;
+    margin-top: 10px;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    /* font-family: "Inter"; */
+    border-radius: 3px;
+}
+
+.headingReqRes {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-decoration-line: underline;
+    color: brown;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3;
+    /* Light grey */
+    border-top: 10px solid #383636;
+    /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex>div {
+    margin: 0 1rem 2rem 1rem;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
